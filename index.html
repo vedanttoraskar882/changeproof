@@ -5,22 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChangeProof Rx — Regulatory Change & Evidence for Online Pharmacies</title>
   <meta name="description" content="ChangeProof Rx helps online pharmacy teams trace regulatory updates to procedures, consultation rules, website pages and partner checks, gathering dated evidence for inspection.">
+  
   <!-- Blank favicon requirement -->
   <link rel="icon" href="data:,">
+
+  <!-- Typography: High-legibility clinical & governance font stack -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Skip to main content link for keyboard navigation accessibility -->
+  <!-- Accessible Skip Link -->
   <a href="#home" class="skip-link">Skip to main content</a>
 
   <!-- Header Navigation -->
   <header class="site-header" id="site-header">
     <div class="header-container">
       <a href="#home" class="wordmark" aria-label="ChangeProof Rx home">
+        <span class="wordmark-emblem" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
         <span class="wordmark-text">ChangeProof <span class="wordmark-accent">Rx</span></span>
       </a>
 
-      <!-- Mobile Navigation Toggle Button -->
+      <!-- Mobile Navigation Hamburger -->
       <button 
         type="button" 
         class="nav-toggle" 
@@ -45,7 +58,12 @@
           <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
         </ul>
         <div class="header-cta-wrapper">
-          <button type="button" class="btn btn-primary open-pilot-btn">Request a Pilot</button>
+          <button type="button" class="btn btn-primary open-pilot-btn">
+            <span>Request a Pilot</span>
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
         </div>
       </nav>
     </div>
@@ -56,97 +74,166 @@
          SECTION 1 — HOME
          ========================================== -->
     <section id="home" class="section section-hero">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
       <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="concept-badge">Regulatory Change & Evidence Platform</div>
+        <div class="hero-content reveal-on-scroll">
+          <div class="concept-badge">
+            <span class="status-dot-pulse" aria-hidden="true"></span>
+            <span>Digital Pharmacy Governance &amp; Evidence</span>
+          </div>
           <h1 class="hero-title">Show how regulatory changes are put into practice in your online pharmacy.</h1>
           <p class="hero-copy">ChangeProof Rx is being developed to help pharmacy teams trace a regulatory update to the procedure, consultation rule, website page or partner check that implements it, and gather dated evidence for inspection.</p>
+          
           <div class="hero-actions">
-            <button type="button" class="btn btn-primary btn-large open-pilot-btn">Request a Pilot</button>
-            <a href="#how-it-works" class="btn btn-secondary btn-large">See how it works</a>
+            <button type="button" class="btn btn-primary btn-large open-pilot-btn">
+              <span>Request a Pilot</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <a href="#how-it-works" class="btn btn-secondary btn-large">
+              <span>See how it works</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
           </div>
-          <div class="hero-trust-note">
-            <span class="trust-icon" aria-hidden="true">📋</span>
-            <span>Designed for superintendent pharmacists, compliance leads and digital pharmacy owners.</span>
+
+          <div class="hero-trust-bar">
+            <div class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>GPhC Standards Alignment</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>Dated Snapshots &amp; Drift Alerts</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <polyline points="16 11 18 13 22 9"/>
+              </svg>
+              <span>Superintendent Sign-off Chain</span>
+            </div>
           </div>
         </div>
 
         <!-- Illustrative Evidence Record Component -->
-        <div class="hero-preview-wrapper">
+        <div class="hero-preview-wrapper reveal-on-scroll">
           <div class="evidence-card" aria-labelledby="evidence-card-title">
+            <div class="evidence-card-chrome">
+              <div class="chrome-controls" aria-hidden="true">
+                <span class="chrome-dot dot-red"></span>
+                <span class="chrome-dot dot-yellow"></span>
+                <span class="chrome-dot dot-green"></span>
+                <span class="chrome-path">evidence-register / OBL-2024-082</span>
+              </div>
+              <span class="preview-badge">Example Record</span>
+            </div>
+
             <div class="evidence-card-header">
               <div class="evidence-card-title-group">
                 <span class="evidence-indicator" aria-hidden="true"></span>
                 <h2 id="evidence-card-title" class="evidence-card-title">Illustrative evidence record</h2>
               </div>
-              <span class="preview-badge">Example Record</span>
+              <span class="audit-id-badge" aria-hidden="true">ID: #CPR-882-AUD</span>
             </div>
             
-            <p class="preview-disclaimer">Fictional demonstration data for illustration only — not a live regulatory alert or legal guidance.</p>
+            <p class="preview-disclaimer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+              <span>Fictional demonstration data for illustration only — not a live regulatory alert or legal guidance.</span>
+            </p>
 
             <div class="evidence-pipeline" role="list">
               <!-- Linked Row 1: Source Change -->
               <div class="pipeline-row" role="listitem">
                 <div class="pipeline-marker">
-                  <span class="marker-dot" aria-hidden="true">1</span>
-                  <span class="marker-line" aria-hidden="true"></span>
+                  <div class="marker-dot" aria-hidden="true">
+                    <span class="marker-num">1</span>
+                  </div>
+                  <div class="marker-line" aria-hidden="true"></div>
                 </div>
                 <div class="pipeline-content">
                   <div class="pipeline-meta">
                     <span class="row-label">Source change</span>
-                    <span class="meta-tag">GPhC Guidance Update</span>
+                    <span class="meta-tag tag-source">GPhC Guidance Update</span>
                   </div>
                   <p class="row-text">Guidance on online prescribing transparency is updated.</p>
+                  <div class="row-audit-meta">Ref: GPhC-2024-TRP • Published: 02 Sep 2024</div>
                 </div>
               </div>
 
               <!-- Linked Row 2: Obligation -->
               <div class="pipeline-row" role="listitem">
                 <div class="pipeline-marker">
-                  <span class="marker-dot" aria-hidden="true">2</span>
-                  <span class="marker-line" aria-hidden="true"></span>
+                  <div class="marker-dot" aria-hidden="true">
+                    <span class="marker-num">2</span>
+                  </div>
+                  <div class="marker-line" aria-hidden="true"></div>
                 </div>
                 <div class="pipeline-content">
                   <div class="pipeline-meta">
                     <span class="row-label">Obligation</span>
-                    <span class="meta-tag">Qualified Reviewer Approved</span>
+                    <span class="meta-tag tag-obligation">Reviewer Approved</span>
                   </div>
                   <p class="row-text">A reviewer identifies which prescriber details the pharmacy needs to display.</p>
+                  <div class="row-audit-meta">Assigned: Clinical Review Lead • Approved: 05 Sep 2024</div>
                 </div>
               </div>
 
               <!-- Linked Row 3: Control -->
               <div class="pipeline-row" role="listitem">
                 <div class="pipeline-marker">
-                  <span class="marker-dot" aria-hidden="true">3</span>
-                  <span class="marker-line" aria-hidden="true"></span>
+                  <div class="marker-dot" aria-hidden="true">
+                    <span class="marker-num">3</span>
+                  </div>
+                  <div class="marker-line" aria-hidden="true"></div>
                 </div>
                 <div class="pipeline-content">
                   <div class="pipeline-meta">
                     <span class="row-label">Control</span>
-                    <span class="meta-tag">Web Page & Partner Check</span>
+                    <span class="meta-tag tag-control">Live Web &amp; Partner Check</span>
                   </div>
                   <p class="row-text">The digital team updates the relevant product page. The prescribing partner confirms its details.</p>
+                  <div class="row-audit-meta">SOP: Clause 4.2 • Partner Ref: PRT-CLINIC-90</div>
                 </div>
               </div>
 
               <!-- Linked Row 4: Evidence -->
               <div class="pipeline-row" role="listitem">
                 <div class="pipeline-marker">
-                  <span class="marker-dot" aria-hidden="true">4</span>
+                  <div class="marker-dot" aria-hidden="true">
+                    <span class="marker-num">4</span>
+                  </div>
                 </div>
                 <div class="pipeline-content">
                   <div class="pipeline-meta">
                     <span class="row-label">Evidence</span>
-                    <span class="meta-tag">Dated Snapshot & Sign-Off</span>
+                    <span class="meta-tag tag-evidence">Dated Capture &amp; Sign-Off</span>
                   </div>
                   <p class="row-text">A dated page capture and the superintendent’s sign-off are linked to the change.</p>
+                  <div class="row-audit-meta">Hash: SHA-256 (e8b7c3...) • Timestamp: 14 Sep 2024 16:42 UTC</div>
                 </div>
               </div>
             </div>
 
             <div class="evidence-card-footer">
-              <span class="footer-status-pill">Status: Verified & Linked</span>
+              <div class="footer-status-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Status: Verified &amp; Linked</span>
+              </div>
               <span class="footer-audit-note">Audit timestamp: 14/09/2024 16:42 UTC</span>
             </div>
           </div>
@@ -159,38 +246,73 @@
          ========================================== -->
     <section id="about" class="section section-about">
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">The Governance Challenge</span>
-          <h2 class="section-title">Bridging Regulatory Updates and Digital Reality</h2>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">About ChangeProof Rx</span>
+          <h2 class="section-title">The governance gap in digital pharmacy practice</h2>
+          <p class="section-subtitle">Bridging the critical disconnect between published regulatory updates, internal operating procedures, and patient-facing digital journeys.</p>
         </div>
 
         <div class="problem-solution-grid">
           <!-- The Practical Problem -->
-          <div class="info-card problem-card">
-            <div class="card-icon-header">
-              <span class="card-icon" aria-hidden="true">⚠️</span>
-              <h3 class="card-title">The practical compliance problem</h3>
+          <div class="info-card problem-card reveal-on-scroll">
+            <div class="card-top-tag tag-danger">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+              <span>The Governance Disconnect</span>
             </div>
+            <h3 class="card-title">The practical compliance problem</h3>
             <p class="card-lead">A pharmacy can receive a regulatory update, revise a standard operating procedure (SOP) and still struggle to show what patients actually saw online when the change took effect. The SOP, questionnaire, website and prescribing-partner records may each have a different owner.</p>
             <p class="card-body">When regulators or inspectors ask for historical verification, compliance teams often face fragmented files, untracked website edits and disparate communications across external prescribing partners.</p>
+            
+            <div class="card-callout-strip">
+              <span class="strip-label">Resulting Risk:</span>
+              <span>Inability to produce definitive, dated proof of clinical compliance at the moment of patient consultation.</span>
+            </div>
           </div>
 
           <!-- The Core Solution Pipeline -->
-          <div class="info-card solution-card">
-            <div class="card-icon-header">
-              <span class="card-icon" aria-hidden="true">🔗</span>
-              <h3 class="card-title">The four records at the centre of the plan</h3>
+          <div class="info-card solution-card reveal-on-scroll">
+            <div class="card-top-tag tag-success">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+              <span>Structured Governance Trail</span>
             </div>
-            <p class="card-lead">ChangeProof Rx structures governance into four interconnected records, ensuring an unbroken audit trail from publication to digital proof:</p>
+            <h3 class="card-title">The four records at the centre of the plan</h3>
+            <p class="card-lead">ChangeProof Rx structures compliance into four interconnected, tamper-evident records to ensure unbroken auditability from statutory publication to digital proof:</p>
             
-            <div class="pipeline-diagram-flow">
-              <div class="flow-pill">Source change</div>
-              <div class="flow-arrow" aria-hidden="true">→</div>
-              <div class="flow-pill">Obligation</div>
-              <div class="flow-arrow" aria-hidden="true">→</div>
-              <div class="flow-pill">Control</div>
-              <div class="flow-arrow" aria-hidden="true">→</div>
-              <div class="flow-pill">Evidence</div>
+            <div class="pipeline-diagram-flow" aria-label="Governance pipeline flow">
+              <div class="flow-step">
+                <span class="flow-pill">Source change</span>
+              </div>
+              <div class="flow-connector" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
+              <div class="flow-step">
+                <span class="flow-pill">Obligation</span>
+              </div>
+              <div class="flow-connector" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
+              <div class="flow-step">
+                <span class="flow-pill">Control</span>
+              </div>
+              <div class="flow-connector" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
+              <div class="flow-step">
+                <span class="flow-pill">Evidence</span>
+              </div>
             </div>
 
             <div class="definitions-grid">
@@ -215,18 +337,35 @@
         </div>
 
         <!-- Founder Profile Card -->
-        <div class="founder-card">
-          <div class="founder-badge">Founder Background</div>
-          <div class="founder-header">
-            <div class="founder-avatar" aria-hidden="true">KP</div>
-            <div>
-              <h3 class="founder-name">Keerthi Pasam</h3>
-              <p class="founder-role">Founder, ChangeProof Rx • MA in International Relations (Coventry University)</p>
+        <div class="founder-card reveal-on-scroll">
+          <div class="founder-card-inner">
+            <div class="founder-avatar-column">
+              <div class="founder-avatar" aria-hidden="true">
+                <span>KP</span>
+              </div>
+              <div class="founder-badge">Founder Profile</div>
             </div>
-          </div>
-          <div class="founder-bio">
-            <p>Keerthi Pasam is the founder behind ChangeProof Rx. She holds an MA in International Relations from Coventry University. At HeliosX, she built a regulatory monitoring tracker covering six or more international markets and prepared weekly policy briefings for senior leadership. ChangeProof Rx applies that experience to a practical pharmacy question: when guidance changes, how can a team show what it changed in response?</p>
-            <p class="governance-disclaimer"><em>Note on clinical governance:</em> In the planned ChangeProof Rx service, pharmacy interpretation and professional regulatory review are conducted exclusively by qualified reviewers. Keerthi provides operational and product leadership; professional clinical oversight is retained by registered pharmacy professionals and each operator’s superintendent pharmacist.</p>
+
+            <div class="founder-content-column">
+              <div class="founder-meta">
+                <h3 class="founder-name">Keerthi Pasam</h3>
+                <p class="founder-role">Founder, ChangeProof Rx • MA in International Relations (Coventry University)</p>
+              </div>
+
+              <div class="founder-bio">
+                <p>Keerthi Pasam is the founder behind ChangeProof Rx. She holds an MA in International Relations from Coventry University. At HeliosX, she built a regulatory monitoring tracker covering six or more international markets and prepared weekly policy briefings for senior leadership. ChangeProof Rx applies that experience to a practical pharmacy question: when guidance changes, how can a team show what it changed in response?</p>
+              </div>
+
+              <div class="governance-disclaimer">
+                <div class="disclaimer-header">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                  <span>Professional Clinical Governance Boundary</span>
+                </div>
+                <p>In the planned ChangeProof Rx service, pharmacy interpretation and professional regulatory review are conducted exclusively by qualified reviewers. Keerthi provides operational tracking and product leadership; professional clinical oversight is retained by registered pharmacy professionals and each operator’s superintendent pharmacist.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -237,22 +376,36 @@
          ========================================== -->
     <section id="platform" class="section section-platform">
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">Product Capabilities</span>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Platform Architecture</span>
           <h2 class="section-title">Five modules, from regulatory monitoring to evidence.</h2>
-          <p class="section-subtitle">A cohesive governance architecture designed specifically for the operational complexities of distance-selling pharmacies.</p>
+          <p class="section-subtitle">A modular software system built to transform regulatory notifications into verifiable operational controls and ready-to-inspect audit binders.</p>
         </div>
 
         <!-- Five Software Modules Grid -->
         <div class="modules-grid">
           <!-- Module 1: Regulatory Radar -->
-          <article class="module-card">
+          <article class="module-card reveal-on-scroll">
             <div class="module-card-header">
-              <span class="module-number">01</span>
-              <span class="module-stage-tag release-initial">Planned Initial Release</span>
+              <div class="module-index-badge">
+                <span class="module-number">01</span>
+                <span class="module-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                    <path d="M2 12h20"/>
+                  </svg>
+                </span>
+              </div>
+              <span class="module-stage-tag release-initial">
+                <span class="dot-indicator dot-teal" aria-hidden="true"></span>
+                <span>Planned Initial Release</span>
+              </span>
             </div>
+            
             <h3 class="module-title">Regulatory Radar</h3>
             <p class="module-description">Monitors relevant publications from the GPhC, MHRA, CQC, ASA, ICO, legislation.gov.uk and professional bodies. Classifies updates by medicine category, business model, geography and urgency so compliance leads can identify relevant changes.</p>
+            
             <div class="module-details">
               <div class="detail-row">
                 <span class="detail-label">What the user does:</span>
@@ -266,13 +419,29 @@
           </article>
 
           <!-- Module 2: Obligation Graph -->
-          <article class="module-card">
+          <article class="module-card reveal-on-scroll">
             <div class="module-card-header">
-              <span class="module-number">02</span>
-              <span class="module-stage-tag release-initial">Planned Initial Release</span>
+              <div class="module-index-badge">
+                <span class="module-number">02</span>
+                <span class="module-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3"/>
+                    <circle cx="6" cy="12" r="3"/>
+                    <circle cx="18" cy="19" r="3"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                  </svg>
+                </span>
+              </div>
+              <span class="module-stage-tag release-initial">
+                <span class="dot-indicator dot-teal" aria-hidden="true"></span>
+                <span>Planned Initial Release</span>
+              </span>
             </div>
+            
             <h3 class="module-title">Obligation Graph</h3>
             <p class="module-description">Breaks a relevant publication into specific obligations. Records the source, interpretation, named reviewer and version history so the superintendent can see what applied on a particular date. Language-model assistance may draft an interpretation. A qualified human reviewer must approve it.</p>
+            
             <div class="module-details">
               <div class="detail-row">
                 <span class="detail-label">What the user does:</span>
@@ -286,13 +455,27 @@
           </article>
 
           <!-- Module 3: Control Map -->
-          <article class="module-card">
+          <article class="module-card reveal-on-scroll">
             <div class="module-card-header">
-              <span class="module-number">03</span>
-              <span class="module-stage-tag release-initial">Planned Initial Release</span>
+              <div class="module-index-badge">
+                <span class="module-number">03</span>
+                <span class="module-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="3" y1="9" x2="21" y2="9"/>
+                    <line x1="9" y1="21" x2="9" y2="9"/>
+                  </svg>
+                </span>
+              </div>
+              <span class="module-stage-tag release-initial">
+                <span class="dot-indicator dot-teal" aria-hidden="true"></span>
+                <span>Planned Initial Release</span>
+              </span>
             </div>
+            
             <h3 class="module-title">Control Map</h3>
             <p class="module-description">Links each obligation to a specific SOP clause, consultation questionnaire rule, website page, prescribing-partner check or contract term. An unmapped obligation becomes a task with an owner and due date.</p>
+            
             <div class="module-details">
               <div class="detail-row">
                 <span class="detail-label">What the user does:</span>
@@ -306,13 +489,26 @@
           </article>
 
           <!-- Module 4: Journey Evidence Capture -->
-          <article class="module-card">
+          <article class="module-card reveal-on-scroll">
             <div class="module-card-header">
-              <span class="module-number">04</span>
-              <span class="module-stage-tag release-roadmap">Roadmap Development</span>
+              <div class="module-index-badge">
+                <span class="module-number">04</span>
+                <span class="module-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                    <circle cx="12" cy="13" r="4"/>
+                  </svg>
+                </span>
+              </div>
+              <span class="module-stage-tag release-roadmap">
+                <span class="dot-indicator dot-slate" aria-hidden="true"></span>
+                <span>Roadmap Development</span>
+              </span>
             </div>
+            
             <h3 class="module-title">Journey Evidence Capture</h3>
             <p class="module-description">Captures dated snapshots of authorised product pages and consultation journeys. Checks disclosures, preserves evidence of the approved version and flags later changes that need another review.</p>
+            
             <div class="module-details">
               <div class="detail-row">
                 <span class="detail-label">What the user does:</span>
@@ -326,13 +522,28 @@
           </article>
 
           <!-- Module 5: Partner Assurance -->
-          <article class="module-card">
+          <article class="module-card reveal-on-scroll">
             <div class="module-card-header">
-              <span class="module-number">05</span>
-              <span class="module-stage-tag release-roadmap">Roadmap Development</span>
+              <div class="module-index-badge">
+                <span class="module-number">05</span>
+                <span class="module-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </span>
+              </div>
+              <span class="module-stage-tag release-roadmap">
+                <span class="dot-indicator dot-slate" aria-hidden="true"></span>
+                <span>Roadmap Development</span>
+              </span>
             </div>
+            
             <h3 class="module-title">Partner Assurance</h3>
             <p class="module-description">Helps pharmacy owners request evidence from third-party prescribing services, track deadlines, escalate overdue requests and link responses to the relevant obligations.</p>
+            
             <div class="module-details">
               <div class="detail-row">
                 <span class="detail-label">What the user does:</span>
@@ -347,11 +558,17 @@
         </div>
 
         <!-- Separate Optional Professional Service -->
-        <div class="readiness-review-card">
-          <div class="review-badge-group">
-            <span class="review-tag">Separate Optional Professional Service</span>
+        <div class="readiness-review-card reveal-on-scroll">
+          <div class="review-seal" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <circle cx="12" cy="11" r="3"/>
+            </svg>
           </div>
           <div class="review-card-content">
+            <div class="review-badge-group">
+              <span class="review-tag">Separate Optional Professional Service</span>
+            </div>
             <h3 class="review-title">Readiness Review</h3>
             <p class="review-description">An annual or pre-inspection review by a registered pharmacist associate, using the pharmacy’s evidence to produce a gap report.</p>
             <p class="review-subtext">Delivered independently of software onboarding to provide superintendent pharmacists with expert clinical governance assurance ahead of scheduled or unannounced GPhC inspections.</p>
@@ -359,21 +576,43 @@
         </div>
 
         <!-- Three Principal Outputs -->
-        <div class="outputs-section">
+        <div class="outputs-section reveal-on-scroll">
           <h3 class="outputs-title">Three Principal Platform Outputs</h3>
           <div class="outputs-grid">
             <div class="output-item">
-              <div class="output-icon" aria-hidden="true">📰</div>
+              <div class="output-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
               <h4 class="output-heading">Tailored Weekly Regulatory Briefing</h4>
               <p class="output-text">A weekly regulatory briefing tailored to the operator, filtering out irrelevant statutory notices and highlighting changes directly affecting the pharmacy’s clinical formularies and digital workflows.</p>
             </div>
+            
             <div class="output-item">
-              <div class="output-icon" aria-hidden="true">📊</div>
-              <h4 class="output-heading">Obligations & Evidence Dashboard</h4>
+              <div class="output-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="3" y1="9" x2="21" y2="9"/>
+                  <line x1="9" y1="21" x2="9" y2="9"/>
+                  <path d="M14 15l2 2 4-4"/>
+                </svg>
+              </div>
+              <h4 class="output-heading">Obligations &amp; Evidence Dashboard</h4>
               <p class="output-text">A dashboard showing the status of obligations and evidence, providing superintendents and compliance officers with real-time visibility into mapped controls, outstanding reviews and pending renewals.</p>
             </div>
+            
             <div class="output-item">
-              <div class="output-icon" aria-hidden="true">📁</div>
+              <div class="output-icon-box" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
               <h4 class="output-heading">Exportable Inspection Pack</h4>
               <p class="output-text">An exportable inspection pack organised by GPhC standard and regulatory change, instantly generating indexed, dated documentation for regulatory inspectors and clinical governance committees.</p>
             </div>
@@ -381,10 +620,16 @@
         </div>
 
         <!-- Roadmap Clarity Callout -->
-        <div class="roadmap-callout">
-          <div class="callout-icon" aria-hidden="true">🗺️</div>
+        <div class="roadmap-callout reveal-on-scroll">
+          <div class="callout-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+              <line x1="8" y1="2" x2="8" y2="18"/>
+              <line x1="16" y1="6" x2="16" y2="22"/>
+            </svg>
+          </div>
           <div class="callout-body">
-            <h4 class="callout-heading">Product Roadmap & Current Availability</h4>
+            <h4 class="callout-heading">Product Roadmap &amp; Current Availability</h4>
             <p class="callout-text">ChangeProof Rx is currently in active development. The planned initial release focuses on <strong>Regulatory Radar</strong>, <strong>Obligation Graph</strong>, <strong>Control Map</strong> and <strong>evidence-pack export</strong>. Journey Evidence Capture, drift alerts and the Partner Assurance portal follow in the roadmap. Group dashboards and integrations are later developments. Platform previews displayed on this site reflect planned software architecture.</p>
           </div>
         </div>
@@ -396,91 +641,131 @@
          ========================================== -->
     <section id="how-it-works" class="section section-how-it-works">
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">Operating Workflow</span>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Operating Lifecycle</span>
           <h2 class="section-title">From a published change to an inspection evidence pack.</h2>
           <p class="section-subtitle">An end-to-end eight-step governance lifecycle ensuring every regulatory development is traceable to clinical controls and dated proof.</p>
         </div>
 
         <!-- 8 Sequential Steps -->
-        <div class="steps-container">
+        <div class="steps-container reveal-on-scroll">
           <ol class="workflow-steps" aria-label="How ChangeProof Rx operates in eight steps">
             <!-- Step 1 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 1</span>
-                <h3 class="step-title">Detect</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">01</span>
               </div>
-              <p class="step-description">Regulatory Radar identifies a new or revised publication.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 1</span>
+                  <h3 class="step-title">Detect</h3>
+                </div>
+                <p class="step-description">Regulatory Radar identifies a new or revised publication.</p>
+              </div>
             </li>
 
             <!-- Step 2 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 2</span>
-                <h3 class="step-title">Classify</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">02</span>
               </div>
-              <p class="step-description">The update is tagged by source, medicine category, operating model and urgency.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 2</span>
+                  <h3 class="step-title">Classify</h3>
+                </div>
+                <p class="step-description">The update is tagged by source, medicine category, operating model and urgency.</p>
+              </div>
             </li>
 
             <!-- Step 3 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 3</span>
-                <h3 class="step-title">Interpret</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">03</span>
               </div>
-              <p class="step-description">A qualified reviewer approves the draft interpretation and records the obligations it creates.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 3</span>
+                  <h3 class="step-title">Interpret</h3>
+                </div>
+                <p class="step-description">A qualified reviewer approves the draft interpretation and records the obligations it creates.</p>
+              </div>
             </li>
 
             <!-- Step 4 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 4</span>
-                <h3 class="step-title">Map</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">04</span>
               </div>
-              <p class="step-description">The team links each obligation to existing controls and assigns any gaps to named owners with due dates.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 4</span>
+                  <h3 class="step-title">Map</h3>
+                </div>
+                <p class="step-description">The team links each obligation to existing controls and assigns any gaps to named owners with due dates.</p>
+              </div>
             </li>
 
             <!-- Step 5 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 5</span>
-                <h3 class="step-title">Implement</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">05</span>
               </div>
-              <p class="step-description">Owners update procedures, questionnaire logic, website content or partner agreements and attach supporting evidence.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 5</span>
+                  <h3 class="step-title">Implement</h3>
+                </div>
+                <p class="step-description">Owners update procedures, questionnaire logic, website content or partner agreements and attach supporting evidence.</p>
+              </div>
             </li>
 
             <!-- Step 6 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 6</span>
-                <h3 class="step-title">Verify</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">06</span>
               </div>
-              <p class="step-description">The team checks the live journey and partner evidence. The superintendent records sign-off.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 6</span>
+                  <h3 class="step-title">Verify</h3>
+                </div>
+                <p class="step-description">The team checks the live journey and partner evidence. The superintendent records sign-off.</p>
+              </div>
             </li>
 
             <!-- Step 7 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 7</span>
-                <h3 class="step-title">Monitor</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">07</span>
               </div>
-              <p class="step-description">Scheduled checks flag changes to previously approved pages or journeys.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 7</span>
+                  <h3 class="step-title">Monitor</h3>
+                </div>
+                <p class="step-description">Scheduled checks flag changes to previously approved pages or journeys.</p>
+              </div>
             </li>
 
             <!-- Step 8 -->
             <li class="step-card">
-              <div class="step-header">
-                <span class="step-badge">Step 8</span>
-                <h3 class="step-title">Report</h3>
+              <div class="step-spine-node" aria-hidden="true">
+                <span class="spine-num">08</span>
               </div>
-              <p class="step-description">The linked records become weekly briefings, board summaries and inspection evidence packs.</p>
+              <div class="step-body">
+                <div class="step-header">
+                  <span class="step-badge">Step 8</span>
+                  <h3 class="step-title">Report</h3>
+                </div>
+                <p class="step-description">The linked records become weekly briefings, board summaries and inspection evidence packs.</p>
+              </div>
             </li>
           </ol>
         </div>
 
         <!-- Workflow Example -->
-        <div class="workflow-example-card">
+        <div class="workflow-example-card reveal-on-scroll">
           <div class="example-tag-row">
             <span class="example-badge">Workflow In Action</span>
             <span class="example-subtag">Illustrative Prescribing Partner Scenario</span>
@@ -496,8 +781,8 @@
          ========================================== -->
     <section id="market-pricing" class="section section-pricing">
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">Investment & Plans</span>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Investment &amp; Subscriptions</span>
           <h2 class="section-title">Market pricing</h2>
           <p class="section-subtitle">Illustrative pricing from the ChangeProof Rx business plan. The proposed subscription depends on your pharmacy’s operating model.</p>
         </div>
@@ -505,54 +790,78 @@
         <!-- Three Subscription Cards -->
         <div class="pricing-cards-grid">
           <!-- Tier 1: Essentials -->
-          <div class="pricing-card">
+          <div class="pricing-card reveal-on-scroll">
             <div class="card-tier-header">
+              <span class="pricing-tier-tag">Independent Model</span>
               <h3 class="tier-name">Essentials</h3>
               <p class="tier-target">For a single-premises online pharmacy.</p>
             </div>
+            
             <div class="tier-price-box">
               <div class="tier-price">£350</div>
               <div class="tier-period">per month per premises</div>
             </div>
+
             <div class="tier-cta-box">
-              <button type="button" class="btn btn-primary btn-block open-pilot-btn">Request a Pilot</button>
+              <button type="button" class="btn btn-outline btn-block open-pilot-btn">
+                <span>Request a Pilot</span>
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
           </div>
 
           <!-- Tier 2: Professional -->
-          <div class="pricing-card">
+          <div class="pricing-card pricing-card-elevated reveal-on-scroll">
             <div class="card-tier-header">
+              <span class="pricing-tier-tag tag-primary">Integrated Operations</span>
               <h3 class="tier-name">Professional</h3>
               <p class="tier-target">For operators working with prescribing partners and managing multiple medicine categories.</p>
             </div>
+            
             <div class="tier-price-box">
               <div class="tier-price">£750</div>
               <div class="tier-period">per month per premises</div>
             </div>
+
             <div class="tier-cta-box">
-              <button type="button" class="btn btn-primary btn-block open-pilot-btn">Request a Pilot</button>
+              <button type="button" class="btn btn-primary btn-block open-pilot-btn">
+                <span>Request a Pilot</span>
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
           </div>
 
           <!-- Tier 3: Group -->
-          <div class="pricing-card">
+          <div class="pricing-card reveal-on-scroll">
             <div class="card-tier-header">
+              <span class="pricing-tier-tag">Multi-Brand Architecture</span>
               <h3 class="tier-name">Group</h3>
               <p class="tier-target">For multi-brand pharmacy groups.</p>
             </div>
+            
             <div class="tier-price-box">
               <div class="tier-price">£1,200</div>
               <div class="tier-period">per month</div>
               <div class="tier-additional-charge">plus £300 per additional brand</div>
             </div>
+
             <div class="tier-cta-box">
-              <button type="button" class="btn btn-primary btn-block open-pilot-btn">Request a Pilot</button>
+              <button type="button" class="btn btn-outline btn-block open-pilot-btn">
+                <span>Request a Pilot</span>
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Two Additional Commercial Offerings -->
-        <div class="additional-offerings">
+        <div class="additional-offerings reveal-on-scroll">
           <h3 class="offerings-title">Additional Commercial Offerings</h3>
           <div class="offerings-grid">
             <!-- Readiness Review Offering -->
@@ -564,7 +873,12 @@
               <div class="offering-price">£2,500–£6,000 per review</div>
               <p class="offering-text">Available to operators across all subscription tiers and to new entrants.</p>
               <div class="offering-cta">
-                <button type="button" class="btn btn-outline open-pilot-btn">Request a Pilot</button>
+                <button type="button" class="btn btn-outline open-pilot-btn">
+                  <span>Request a Pilot</span>
+                  <svg class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
               </div>
             </div>
 
@@ -577,14 +891,26 @@
               <div class="offering-price">£400 per month per consultant seat</div>
               <p class="offering-text">Intended for regulatory consultants supporting pharmacy clients.</p>
               <div class="offering-cta">
-                <button type="button" class="btn btn-outline open-pilot-btn">Request a Pilot</button>
+                <button type="button" class="btn btn-outline open-pilot-btn">
+                  <span>Request a Pilot</span>
+                  <svg class="btn-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Billing Note -->
-        <div class="billing-note-box">
+        <div class="billing-note-box reveal-on-scroll">
+          <div class="billing-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+          </div>
           <p class="billing-note-text"><strong>Billing note:</strong> The plan proposes annual subscription contracts, invoiced monthly or annually, with a discount for annual prepayment.</p>
         </div>
       </div>
@@ -595,19 +921,23 @@
          ========================================== -->
     <section id="faq" class="section section-faq">
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">Frequently Asked Questions</span>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Governance &amp; Operations</span>
           <h2 class="section-title">Frequently asked questions</h2>
           <p class="section-subtitle">Direct answers regarding platform governance, clinical scope, integration with existing SOPs and prototype testing.</p>
         </div>
 
         <!-- Native Accessible Accordion -->
-        <div class="faq-accordion">
+        <div class="faq-accordion reveal-on-scroll">
           <!-- Question 1 -->
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">Who is ChangeProof Rx designed for?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>The initial focus is online and distance-selling pharmacies, particularly superintendent pharmacists, owners and compliance leads. The plan also addresses multi-brand groups, prescribing partners and regulatory consultants supporting several pharmacy clients.</p>
@@ -618,7 +948,11 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">Can we use our existing SOPs?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>Yes. The proposed Control Map links an obligation to a specific clause in an existing SOP. The pharmacy can connect that clause to the questionnaire rule, webpage or partner evidence used to implement it.</p>
@@ -629,7 +963,11 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">Who approves regulatory interpretations?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>Language-model assistance can prepare a draft from public source material. A named, qualified human reviewer approves the interpretation. The superintendent pharmacist retains professional responsibility for the pharmacy’s decisions.</p>
@@ -640,7 +978,11 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">What happens if a webpage changes after sign-off?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>The planned Journey Evidence Capture module compares an authorised page with its approved version. A change triggers a review so the team can assess its significance and record any action taken.</p>
@@ -651,7 +993,11 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">What would an inspection evidence pack contain?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>The pack brings together the source change, approved interpretation, mapped controls, supporting evidence and dated sign-offs. Records can be organised by GPhC standard and by regulatory change.</p>
@@ -662,7 +1008,11 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">Is the Readiness Review part of the subscription price?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>The business plan prices it separately at £2,500–£6,000 per review. A pharmacist associate reviews the available evidence and produces a gap report.</p>
@@ -673,7 +1023,11 @@
           <details class="faq-item">
             <summary class="faq-question">
               <span class="question-text">What happens when I complete the pilot form?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </span>
             </summary>
             <div class="faq-answer">
               <p>This landing-page prototype saves the request in this browser on this device. It does not transmit the details to the ChangeProof Rx team or create a booking.</p>
@@ -692,9 +1046,19 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="wordmark footer-wordmark">
+            <span class="wordmark-emblem" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
             <span class="wordmark-text">ChangeProof <span class="wordmark-accent">Rx</span></span>
           </div>
           <p class="footer-description">Regulatory change tracking and inspection evidence for online pharmacy teams.</p>
+          <div class="footer-trust-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Healthcare Compliance &amp; Audit Trail Architecture</span>
+          </div>
         </div>
 
         <nav class="footer-nav" aria-label="Footer navigation">
@@ -712,7 +1076,12 @@
         <div class="footer-cta-column">
           <span class="footer-cta-title">Pilot Programme</span>
           <p class="footer-cta-text">Register interest in participating in the upcoming ChangeProof Rx beta evaluation.</p>
-          <button type="button" class="btn btn-primary open-pilot-btn">Request a Pilot</button>
+          <button type="button" class="btn btn-primary open-pilot-btn">
+            <span>Request a Pilot</span>
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -729,9 +1098,20 @@
   <dialog id="pilot-dialog" class="pilot-dialog" aria-labelledby="dialog-title">
     <div class="dialog-content">
       <div class="dialog-header">
-        <h2 id="dialog-title" class="dialog-title">Request a Pilot</h2>
+        <div class="dialog-title-group">
+          <div class="dialog-icon-badge" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h2 id="dialog-title" class="dialog-title">Request a Pilot</h2>
+        </div>
         <button type="button" class="dialog-close-btn" id="dialog-close-btn" aria-label="Close dialog">
-          <span aria-hidden="true">&times;</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
         </button>
       </div>
 
@@ -798,7 +1178,14 @@
         </div>
 
         <div class="dialog-actions">
-          <button type="submit" class="btn btn-primary btn-block">Save pilot request</button>
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Save pilot request</span>
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+              <polyline points="17 21 17 13 7 13 7 21"/>
+              <polyline points="7 3 7 8 15 8"/>
+            </svg>
+          </button>
         </div>
       </form>
     </div>

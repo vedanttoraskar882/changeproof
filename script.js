@@ -1,11 +1,11 @@
 /**
- * ChangeProof Rx — Frontend Script
- * Handles dialog interactions, accessible mobile navigation, and pilot request storage.
+ * ChangeProof Rx — Frontend Architecture & Interactions
+ * Manages modal dialogs, accessible navigation, scroll reveals, and pilot request storage.
  */
 
 document.addEventListener("DOMContentLoaded", () => {
   /* ==========================================
-     1. DIALOG & MODAL CONTROLS
+     1. DIALOG & ACCESSIBLE MODAL CONTROLS
      ========================================== */
   const pilotDialog = document.getElementById("pilot-dialog");
   const dialogCloseBtn = document.getElementById("dialog-close-btn");
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       lastActiveElement = document.activeElement;
       
-      // Clear stale status text and reset form validation indicators
+      // Clear stale status text when reopening dialog
       if (pilotStatus) {
         pilotStatus.textContent = "";
         pilotStatus.className = "pilot-status";
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         pilotDialog.setAttribute("open", "true");
       }
 
-      // Focus the first form field
+      // Shift keyboard focus to first form input
       const fullNameInput = document.getElementById("fullName");
       if (fullNameInput) {
         fullNameInput.focus();
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dialogCloseBtn.addEventListener("click", closeDialog);
   }
 
-  // Restore focus to triggering CTA button on close
+  // Restore focus to originating CTA button when closed
   pilotDialog.addEventListener("close", () => {
     if (lastActiveElement && typeof lastActiveElement.focus === "function") {
       lastActiveElement.focus();
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
      ========================================== */
   const pilotStorageKey = "changeproofRxPilotRequests";
 
-  // Visual status class observer
+  // Visual status class observer for success/error styling
   if (pilotStatus) {
     const observer = new MutationObserver(() => {
       const text = pilotStatus.textContent.trim();
@@ -211,11 +211,39 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       },
       {
-        rootMargin: "-20% 0px -70% 0px",
+        rootMargin: "-25% 0px -65% 0px",
         threshold: 0
       }
     );
 
     sections.forEach((section) => sectionObserver.observe(section));
+  }
+
+  /* ==========================================
+     5. PURPOSEFUL SCROLL ENTRANCE REVEALS
+     ========================================== */
+  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    // Keep immediately visible if reduced motion requested or no observer
+    revealElements.forEach((el) => el.classList.add("is-visible"));
+  } else {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: "0px 0px -60px 0px",
+        threshold: 0.1
+      }
+    );
+
+    revealElements.forEach((el) => revealObserver.observe(el));
   }
 });
