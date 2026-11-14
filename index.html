@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Animated Ambient Atmosphere Layer -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
   <!-- Accessible Skip Link -->
   <a href="#home" class="skip-link">Skip to main content</a>
 
@@ -24,12 +32,6 @@
   <header class="site-header" id="site-header">
     <div class="header-container">
       <a href="#home" class="wordmark" aria-label="ChangeProof Rx home">
-        <span class="wordmark-emblem" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="M9 12l2 2 4-4"/>
-          </svg>
-        </span>
         <span class="wordmark-text">ChangeProof <span class="wordmark-accent">Rx</span></span>
       </a>
 
@@ -74,7 +76,7 @@
          SECTION 1 — HOME
          ========================================== -->
     <section id="home" class="section section-hero">
-      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="hero-radial-glow" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-content reveal-on-scroll">
           <div class="concept-badge">
@@ -266,11 +268,6 @@
             <h3 class="card-title">The practical compliance problem</h3>
             <p class="card-lead">A pharmacy can receive a regulatory update, revise a standard operating procedure (SOP) and still struggle to show what patients actually saw online when the change took effect. The SOP, questionnaire, website and prescribing-partner records may each have a different owner.</p>
             <p class="card-body">When regulators or inspectors ask for historical verification, compliance teams often face fragmented files, untracked website edits and disparate communications across external prescribing partners.</p>
-            
-            <div class="card-callout-strip">
-              <span class="strip-label">Resulting Risk:</span>
-              <span>Inability to produce definitive, dated proof of clinical compliance at the moment of patient consultation.</span>
-            </div>
           </div>
 
           <!-- The Core Solution Pipeline -->
@@ -336,35 +333,29 @@
           </div>
         </div>
 
-        <!-- Founder Profile Card -->
+        <!-- Founder Profile Card (No Avatar / Photo) -->
         <div class="founder-card reveal-on-scroll">
-          <div class="founder-card-inner">
-            <div class="founder-avatar-column">
-              <div class="founder-avatar" aria-hidden="true">
-                <span>KP</span>
-              </div>
-              <div class="founder-badge">Founder Profile</div>
+          <div class="founder-card-header">
+            <span class="founder-badge">Founder Profile</span>
+          </div>
+          <div class="founder-content">
+            <div class="founder-meta">
+              <h3 class="founder-name">Keerthi Pasam</h3>
+              <p class="founder-role">Founder, ChangeProof Rx • MA in International Relations (Coventry University)</p>
             </div>
 
-            <div class="founder-content-column">
-              <div class="founder-meta">
-                <h3 class="founder-name">Keerthi Pasam</h3>
-                <p class="founder-role">Founder, ChangeProof Rx • MA in International Relations (Coventry University)</p>
-              </div>
+            <div class="founder-bio">
+              <p>Keerthi Pasam is the founder behind ChangeProof Rx. She holds an MA in International Relations from Coventry University. At HeliosX, she built a regulatory monitoring tracker covering six or more international markets and prepared weekly policy briefings for senior leadership. ChangeProof Rx applies that experience to a practical pharmacy question: when guidance changes, how can a team show what it changed in response?</p>
+            </div>
 
-              <div class="founder-bio">
-                <p>Keerthi Pasam is the founder behind ChangeProof Rx. She holds an MA in International Relations from Coventry University. At HeliosX, she built a regulatory monitoring tracker covering six or more international markets and prepared weekly policy briefings for senior leadership. ChangeProof Rx applies that experience to a practical pharmacy question: when guidance changes, how can a team show what it changed in response?</p>
+            <div class="governance-disclaimer">
+              <div class="disclaimer-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span>Professional Clinical Governance Boundary</span>
               </div>
-
-              <div class="governance-disclaimer">
-                <div class="disclaimer-header">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  </svg>
-                  <span>Professional Clinical Governance Boundary</span>
-                </div>
-                <p>In the planned ChangeProof Rx service, pharmacy interpretation and professional regulatory review are conducted exclusively by qualified reviewers. Keerthi provides operational tracking and product leadership; professional clinical oversight is retained by registered pharmacy professionals and each operator’s superintendent pharmacist.</p>
-              </div>
+              <p>In the planned ChangeProof Rx service, pharmacy interpretation and professional regulatory review are conducted exclusively by qualified reviewers. Keerthi provides operational tracking and product leadership; professional clinical oversight is retained by registered pharmacy professionals and each operator’s superintendent pharmacist.</p>
             </div>
           </div>
         </div>
@@ -375,6 +366,7 @@
          SECTION 3 — PLATFORM
          ========================================== -->
     <section id="platform" class="section section-platform">
+      <div class="platform-mesh-bg" aria-hidden="true"></div>
       <div class="container">
         <div class="section-header reveal-on-scroll">
           <span class="section-eyebrow">Platform Architecture</span>
@@ -780,6 +772,7 @@
          SECTION 5 — MARKET PRICING
          ========================================== -->
     <section id="market-pricing" class="section section-pricing">
+      <div class="pricing-spotlight-glow" aria-hidden="true"></div>
       <div class="container">
         <div class="section-header reveal-on-scroll">
           <span class="section-eyebrow">Investment &amp; Subscriptions</span>
@@ -1046,12 +1039,6 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="wordmark footer-wordmark">
-            <span class="wordmark-emblem" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path d="M9 12l2 2 4-4"/>
-              </svg>
-            </span>
             <span class="wordmark-text">ChangeProof <span class="wordmark-accent">Rx</span></span>
           </div>
           <p class="footer-description">Regulatory change tracking and inspection evidence for online pharmacy teams.</p>
@@ -1098,15 +1085,7 @@
   <dialog id="pilot-dialog" class="pilot-dialog" aria-labelledby="dialog-title">
     <div class="dialog-content">
       <div class="dialog-header">
-        <div class="dialog-title-group">
-          <div class="dialog-icon-badge" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <path d="M9 12l2 2 4-4"/>
-            </svg>
-          </div>
-          <h2 id="dialog-title" class="dialog-title">Request a Pilot</h2>
-        </div>
+        <h2 id="dialog-title" class="dialog-title">Request a Pilot</h2>
         <button type="button" class="dialog-close-btn" id="dialog-close-btn" aria-label="Close dialog">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="18" y1="6" x2="6" y2="18"/>
@@ -1114,8 +1093,6 @@
           </svg>
         </button>
       </div>
-
-      <p class="dialog-helper">This prototype saves your details in this browser on this device. Your request is not sent to the team.</p>
 
       <div id="pilot-status" role="status" aria-live="polite" class="pilot-status"></div>
 
@@ -1130,7 +1107,6 @@
             autocomplete="name" 
             required 
             aria-required="true"
-            placeholder="e.g. Dr Helen Davies"
           >
         </div>
 
@@ -1144,7 +1120,6 @@
             autocomplete="tel" 
             required 
             aria-required="true"
-            placeholder="e.g. +44 20 7946 0192"
           >
           <span class="field-hint">International numbers with +, spaces and brackets accepted.</span>
         </div>
@@ -1159,7 +1134,6 @@
             autocomplete="email" 
             required 
             aria-required="true"
-            placeholder="e.g. superintendent@examplepharmacy.co.uk"
           >
         </div>
 
@@ -1173,17 +1147,15 @@
             autocomplete="organization" 
             required 
             aria-required="true"
-            placeholder="e.g. St Jude Online Pharmacy Ltd"
           >
         </div>
 
         <div class="dialog-actions">
           <button type="submit" class="btn btn-primary btn-block">
-            <span>Save pilot request</span>
+            <span>Send a pilot request</span>
             <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
-              <polyline points="17 21 17 13 7 13 7 21"/>
-              <polyline points="7 3 7 8 15 8"/>
+              <path d="M22 2L11 13"/>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
             </svg>
           </button>
         </div>
